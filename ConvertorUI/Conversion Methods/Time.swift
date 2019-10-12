@@ -11,10 +11,6 @@ import Foundation
 enum Time: Conversion {
     typealias SecondType = Time
     
-    init() {
-        self.init()
-    }
-    
     case second
     case hour
     case day
