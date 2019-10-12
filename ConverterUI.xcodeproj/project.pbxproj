@@ -104,9 +104,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C00EB7B23514C51003DC79C /* ConvertorUI */ = {
+		7C00EB7B23514C51003DC79C /* ConverterUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C00EB9023514C59003DC79C /* Build configuration list for PBXNativeTarget "ConvertorUI" */;
+			buildConfigurationList = 7C00EB9023514C59003DC79C /* Build configuration list for PBXNativeTarget "ConverterUI" */;
 			buildPhases = (
 				7C00EB7823514C51003DC79C /* Sources */,
 				7C00EB7923514C51003DC79C /* Frameworks */,
@@ -116,7 +116,7 @@
 			);
 			dependencies = (
 			);
-			name = ConvertorUI;
+			name = ConverterUI;
 			productName = ConvertorUI;
 			productReference = 7C00EB7C23514C51003DC79C /* ConverterUI.app */;
 			productType = "com.apple.product-type.application";
@@ -136,7 +136,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7C00EB7723514C51003DC79C /* Build configuration list for PBXProject "ConvertorUI" */;
+			buildConfigurationList = 7C00EB7723514C51003DC79C /* Build configuration list for PBXProject "ConverterUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -149,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C00EB7B23514C51003DC79C /* ConvertorUI */,
+				7C00EB7B23514C51003DC79C /* ConverterUI */,
 			);
 		};
 /* End PBXProject section */
@@ -355,7 +355,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C00EB7723514C51003DC79C /* Build configuration list for PBXProject "ConvertorUI" */ = {
+		7C00EB7723514C51003DC79C /* Build configuration list for PBXProject "ConverterUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C00EB8E23514C59003DC79C /* Debug */,
@@ -364,7 +364,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C00EB9023514C59003DC79C /* Build configuration list for PBXNativeTarget "ConvertorUI" */ = {
+		7C00EB9023514C59003DC79C /* Build configuration list for PBXNativeTarget "ConverterUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C00EB9123514C59003DC79C /* Debug */,

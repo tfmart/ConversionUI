@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ConvertorUI.xcodeproj">
+      location = "self:/Users/tomasmartins/Documents/Xcode Projects/ConvertorUI/ConverterUI.xcodeproj">
    </FileRef>
 </Workspace>
