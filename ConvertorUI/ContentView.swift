@@ -9,76 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    let units = ["ºC", "ºF", "K"]
-    @State private var inputIndex = 0
-    @State private var outputIndex = 0
-    @State private var input = ""
-    var result: String {
-        return String(convertTemperature(value: input))
-    }
     var body: some View {
-        NavigationView {
-            Form {
-                Section {
-                    TextField("Quantity", text: $input)
-                    .keyboardType(.decimalPad)
-                }
-                
-                Section {
-                    Picker("From", selection: $inputIndex) {
-                        ForEach(0..<3) {
-                            Text(self.units[$0])
-                        }
-                    }
-
-                    Picker("To", selection: $outputIndex) {
-                        ForEach(0..<3) {
-                            Text(self.units[$0])
-                        }
-                    }
-                }
-                
-                Section(header: Text("Result")) {
-                    Text("\(result)")
-                }
-                
-            }
-            .navigationBarTitle("ConverterUI")
-        }
-    }
-}
-
-extension ContentView {
-    func convertTemperature(value: String) -> Double {
-        guard inputIndex != outputIndex else {
-            return Double(value) ?? 0.0
-        }
-        
-        guard let temperature = Double(value) else {
-            return 0.0
-        }
-        
-        switch inputIndex {
-        case 0:
-            if outputIndex == 1 {
-                return (temperature * (9/5)) + 32
-            } else {
-                return temperature + 273
-            }
-        case 1:
-            if outputIndex == 0 {
-                return (temperature - 32) * (5/9)
-            } else {
-                return (temperature - 32) * (5/9) + 273.15
-            }
-        case 2:
-            if outputIndex == 0 {
-                return temperature - 273
-            } else {
-                return (temperature - 273.15) * (9/5) + 32
-            }
-        default:
-            return Double(value) ?? 0.0
+        TabView {
+            ConverterView(method: .temperature)
+                .tabItem {
+                    Image(systemName: "thermometer")
+                    Text("Temperature")
+                }.tag(0)
+            ConverterView(method: .lenght)
+                .tabItem {
+                    Image(systemName: "slash.circle")
+                    Text("Lenght")
+                }.tag(1)
+            ConverterView(method: .time)
+                .tabItem {
+                    Image(systemName: "stopwatch")
+                    Text("Time")
+                }.tag(2)
+            ConverterView(method: .volume)
+                .tabItem {
+                    Image(systemName: "cube")
+                    Text("Volume")
+                }.tag(3)
         }
     }
 }
