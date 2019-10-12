@@ -26,7 +26,7 @@ enum ConversionManager: String {
         case .lenght:
             return ["km", "m", "ft", "yd", "miles"]
         case .time:
-            return ["second", "hour", "hour", "day"]
+            return ["second", "hour", "day"]
         case .volume:
             return ["ml", "l", "cups", "pints", "galoon"]
         }
